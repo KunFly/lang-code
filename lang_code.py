@@ -2,9 +2,9 @@
 # -*- coding:utf-8 -*-
 
 class Lang_Code:
-    def __init__(self, origine, cible):
+    def __init__(self, origine, target):
         self.origine = self.__control_code(origine)
-        self.cible = self.__control_code(cible)
+        self.target = self.__control_code(target)
         self.miss = 0 # number of lang can't be detected
         self.misslang = []
         self.langs = [("aa", "aar"),
@@ -215,8 +215,8 @@ class Lang_Code:
             for x,y in self.langs:
                 self.dict[y] = x
 
-    def set_cibleCode(self, cible):
-        self.cible = self.__control_code(cible)
+    def set_targetCode(self, target):
+        self.target = self.__control_code(target)
         self.dict = {}
         self.__make_dict()
 
