@@ -23,4 +23,4 @@ f = lang-code.Lang_Code("ISO-639-1","ISO-639-3")
 code1 = "fr"
 code2 = f.changeCode(code1)
 print code2
-#"fra"
+==>"fra"
